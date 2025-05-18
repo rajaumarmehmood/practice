@@ -4,7 +4,7 @@
   "description": "Simple arithmetic operations with tests",
   "main": "arithmetic.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest"
   },
   "dependencies": {
     "jest": "^29.7.0"
