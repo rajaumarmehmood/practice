@@ -4,7 +4,7 @@
   "description": "Simple arithmetic operations with tests",
   "main": "hello.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/jest"
+    "test": "jest"
   },
   "dependencies": {
     "jest": "^29.7.0"
