@@ -20,8 +20,12 @@ jobs:
         cache: 'npm'
     
     - name: Install dependencies
-      run: npm install
+      run: |
+        npm install
+        npm install -g jest
+        npm install --save-dev jest
+
     
     - name: Run tests
-      run: npx jest
+      run: jest
       shell: bash 
