@@ -1,8 +1,8 @@
-name: CI for Practice
+name: Simple CI
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -17,15 +17,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18.x'
-        cache: 'npm'
     
     - name: Install dependencies
       run: npm install
-    
-    - name: Debug permissions
-      run: |
-        ls -la node_modules/.bin/
-        chmod +x node_modules/.bin/jest
     
     - name: Run tests
       run: npm test 
